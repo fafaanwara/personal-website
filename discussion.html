@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Diskusi - Kode Akses</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Diskusi — Kode Akses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid-bg" aria-hidden="true"></div>
 
-    <!-- HANYA GATE LOGIN -->
-    <main class="gate-wrap" id="gateWrap">
-        <div class="gate-card">
-            <span class="gate-ring"></span>
-            <span class="gate-icon">⟡</span>
-            <h1>Portal Diskusi</h1>
-            <p class="gate-sub">Ruang ini khusus untuk tamu dengan kode akses. Masukkan kode untuk lanjut.</p>
+<div class="grid-bg" aria-hidden="true"></div>
 
-            <form id="gateForm" autocomplete="off">
-                <input
-                    type="text"
-                    id="gateInput"
-                    placeholder="Masukkan kode akses"
-                    aria-label="Kode akses"
-                    autocomplete="off"
-                >
-                <button type="submit">Masuk ke Ruang Diskusi</button>
-            </form>
+<main class="gate-wrap" id="gateWrap">
+  <div class="gate-card">
+    <span class="gate-ring" aria-hidden="true"></span>
+    <span class="gate-icon" aria-hidden="true">⟡</span>
+    <h1>Portal Diskusi</h1>
+    <p class="gate-sub">Ruang ini khusus untuk tamu dengan kode akses. Masukkan kode untuk lanjut.</p>
 
-            <p class="gate-error" id="gateError">Kode salah. Coba lagi.</p>
-            <a href="index.html" class="gate-back">← Kembali ke halaman utama</a>
-        </div>
-    </main>
+    <form id="gateForm" autocomplete="off">
+      <input
+        type="text"
+        id="gateInput"
+        placeholder="Masukkan kode akses"
+        aria-label="Kode akses"
+        autocomplete="off"
+      >
+      <button type="submit">Masuk ke Ruang Diskusi</button>
+    </form>
 
-    <script src="discussion.js"></script>
+    <p class="gate-error" id="gateError" role="alert">Kode salah. Coba lagi.</p>
+    <a href="index.html" class="gate-back">← Kembali ke halaman utama</a>
+  </div>
+</main>
+
+<script src="discussion.js"></script>
 </body>
 </html>
