@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Diskusi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <main class="discussion-wrap">
+        <header class="discussion-header">
+            <h1>✨ Ruang Diskusi</h1>
+            <p>Selamat datang di ruang privat! Ini adalah tempat aman untuk berbagi ide, catatan, dan diskusi.</p>
+            <button id="logoutBtn" class="logout-btn">🚪 Keluar dari portal</button>
+        </header>
+
+        <!-- Area input catatan -->
+        <section class="discussion-content">
+            <div class="discussion-input-area">
+                <textarea 
+                    id="messageInput" 
+                    placeholder="Tulis pesan atau catatan di sini..."
+                    rows="4"
+                ></textarea>
+                <button id="saveMessage" class="save-btn">💾 Simpan Catatan</button>
+            </div>
+            
+            <!-- Daftar catatan -->
+            <div class="discussion-messages" id="messagesContainer">
+                <p class="empty-state">📝 Belum ada catatan. Mulai tulis sesuatu!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="room.js"></script>
+</body>
+</html>
