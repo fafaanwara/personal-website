@@ -124,7 +124,7 @@ h1, h2, h3{ font-family: var(--font-display); color: var(--text-hi); }
 
 .avatar{
   position: relative;
-  width: 88px; height: 88px;
+  width: 250px; height: 250px;
   margin-bottom: 24px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--blue), var(--blue-deep));
