@@ -1,5 +1,5 @@
 // ===== KONFIGURASI KODE AKSES =====
-const ACCESS_CODE = "kode123"; // Ganti dengan kode Anda
+const ACCESS_CODE = "diskusikita"; // Ganti dengan kode Anda
 
 // ===== ELEMEN DOM =====
 const gateForm = document.getElementById('gateForm');
